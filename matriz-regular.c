@@ -1,16 +1,16 @@
 #include <stdio.h>
-
+#Documentación con Doxygen, esta es la función que hace la parte matemática
 int calcularDeterminante(int matriz[3][3]) {
     int determinante = matriz[0][0] * (matriz[1][1] * matriz[2][2] - matriz[1][2] * matriz[2][1])
                      - matriz[0][1] * (matriz[1][0] * matriz[2][2] - matriz[1][2] * matriz[2][0])
                      + matriz[0][2] * (matriz[1][0] * matriz[2][1] - matriz[1][1] * matriz[2][0]);
     return determinante;
 }
-
+#main
 int main() {
     int matriz[3][3];
     int i, j;
-
+#Doxygen los datos que se le pide al usuario
     printf("Ingrese los elementos de la matriz 3x3 (fila por fila):\n");
     for (i = 0; i < 3; i++) {
         for (j = 0; j < 3; j++) {
